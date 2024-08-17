@@ -7,12 +7,19 @@ const navItems = {
   '/work': {
     name: 'work',
   },
+  '/publications': {
+    name: 'academic',
+  },
+  '/notechzone': {
+    name: 'notechzone',
+  },
   '/blog': {
     name: 'blog',
   },
   '/guestbook': {
     name: 'guestbook',
   },
+
 };
 
 export function Navbar() {
