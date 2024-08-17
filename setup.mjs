@@ -25,7 +25,7 @@ const homePage = `import Image from 'next/image';
         <div className="relative h-40">
           <Image
             alt=""
-            src={public/images/home/avatar.jpg}
+            src={"public/images/home/avatar.jpg"}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -35,7 +35,7 @@ const homePage = `import Image from 'next/image';
         <div className="relative sm:row-span-2 row-span-1">
           <Image
             alt=""
-            src={public/images/home/mountain.jpg}
+            src={"public/images/home/mountain.jpg"}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -45,7 +45,7 @@ const homePage = `import Image from 'next/image';
         <div className="relative">
           <Image
             alt=""
-            src={public/images/home/aikido-kyoto.jpg}
+            src={"public/images/home/aikido-kyoto.jpg"}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -55,7 +55,7 @@ const homePage = `import Image from 'next/image';
         <div className="relative row-span-2">
           <Image
             alt=""
-            src={public/images/home/antaiji-rice.jpg}
+            src={"public/images/home/antaiji-rice.jpg"}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -65,7 +65,7 @@ const homePage = `import Image from 'next/image';
         <div className="relative row-span-2">
           <Image
             alt=""
-            src={public/images/home/calligraphy.jpg}
+            src={"public/images/home/calligraphy.jpg"}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -75,7 +75,7 @@ const homePage = `import Image from 'next/image';
         <div className="relative h-40">
           <Image
             alt=""
-            src={public/images/home/risotto-dja.jpg}
+            src={"public/images/home/risotto-dja.jpg"}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
