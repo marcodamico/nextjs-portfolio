@@ -267,9 +267,9 @@ const deleteFolderRecursive = async (path) => {
   const pubDir = path.join(process.cwd(), 'app', 'publications');
   const passionDir = path.join(process.cwd(), 'app', 'passions');
 
-  await deleteFolderRecursive(contentDir);
-  await deleteFolderRecursive(imagesDir);
-  await fs.mkdir(contentDir);
+  // await deleteFolderRecursive(contentDir);
+  // await deleteFolderRecursive(imagesDir);
+  // await fs.mkdir(contentDir);
   await fs.writeFile(path.join(contentDir, 'hello-world.mdx'), template);
   await fs.writeFile(path.join(appDir, 'page.tsx'), homePage);
   await fs.writeFile(path.join(workDir, 'page.tsx'), workPage);
