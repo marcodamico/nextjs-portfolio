@@ -33,7 +33,7 @@ import Image from 'next/image';
         <div className="relative">
           <Image
             alt=""
-            src={"public/images/home/aikido-kyoto.jpg"}
+            src={"2public/images/home/aikido-kyoto.jpg"}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
