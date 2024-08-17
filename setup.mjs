@@ -230,15 +230,23 @@ const passionPage = `export default function Page() {
 `;
 
 const deleteFolderRecursive = async (path) => {
-  const stat = await fs.stat(path);
-  if (stat.isDirectory()) {
-    const files = await fs.readdir(path);
-    await Promise.all(
-      files.map((file) => deleteFolderRecursive(`${path}/${file}`))
-    );
-    await fs.rmdir(path);
-  } else {
-    await fs.unlink(path);
+  try {
+    const stat = await fs.stat(path);
+    if (stat.isDirectory()) {
+      const files = await fs.readdir(path);
+      await Promise.all(
+        files.map((file) => deleteFolderRecursive(`${path}/${file}`))
+      );
+      await fs.rmdir(path);
+    } else {
+      await fs.unlink(path);
+    }
+  } catch (error) {
+    if (error.code !== 'ENOENT') {
+      // If the error is something other than "file or directory does not exist", rethrow it
+      throw error;
+    }
+    // If the error is "file or directory does not exist", we ignore it
   }
 };
 
