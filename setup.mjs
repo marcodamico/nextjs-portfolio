@@ -25,7 +25,7 @@ const homePage = `import Image from 'next/image';
         <div className="relative h-40">
           <Image
             alt=""
-            src="public/images/home/avatar.jpg"
+            src="/public/images/home/avatar.jpg"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -35,7 +35,7 @@ const homePage = `import Image from 'next/image';
         <div className="relative sm:row-span-2 row-span-1">
           <Image
             alt=""
-            src="public/images/home/mountain.jpg"
+            src="/public/images/home/mountain.jpg"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -45,7 +45,7 @@ const homePage = `import Image from 'next/image';
         <div className="relative">
           <Image
             alt=""
-            src="public/images/home/aikido-kyoto.jpg"
+            src="/public/images/home/aikido-kyoto.jpg"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -55,7 +55,7 @@ const homePage = `import Image from 'next/image';
         <div className="relative row-span-2">
           <Image
             alt=""
-            src="public/images/home/antaiji-rice.jpg"
+            src="/public/images/home/antaiji-rice.jpg"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -65,7 +65,7 @@ const homePage = `import Image from 'next/image';
         <div className="relative row-span-2">
           <Image
             alt=""
-            src="public/images/home/calligraphy.jpg"
+            src="/public/images/home/calligraphy.jpg"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -75,7 +75,7 @@ const homePage = `import Image from 'next/image';
         <div className="relative h-40">
           <Image
             alt=""
-            src="public/images/home/risotto-dja.jpg"
+            src="/public/images/home/risotto-dja.jpg"
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -201,16 +201,12 @@ const pubPage = `export default function Page() {
 
       </p>
       <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
-        <h2 className="font-medium text-xl mb-1 tracking-tighter">synArea Consultants Srl</h2>
+        <h2 className="font-medium text-xl mb-1 tracking-tighter"></h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-           Sep 2013 - Mar 2014: Intern and Software developer
+           
         </p>
         <p>
-          Initially as an intern, later as a software developer, I worked on the parallelization on GPU of a scientific algorithm 
-          simulating a crowd in panic in an indoor enviroment. I developed OpenCL and CUDA kernels, and integrated, tested, and 
-          evaluated the code.
-          Finally, I worked on the integration of the algorithm in 3Doors Framework, developing a 3D graphical version of the 
-          simulation in C++.
+          
         </p>
     </section>
   );
