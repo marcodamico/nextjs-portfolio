@@ -1,117 +1,101 @@
-import type { Metadata } from 'next';
-import Link from 'next/link';
-
-export const metadata: Metadata = {
-  title: 'Work',
-  description: 'A summary of my work and contributions.',
-};
-
-async function Stars() {
-  let res = await fetch('https://api.github.com/repos/vercel/next.js');
-  let json = await res.json();
-  let count = Math.round(json.stargazers_count / 1000);
-  return `${count}k stars`;
-}
-
-export default function WorkPage() {
+export default function Page() {
   return (
     <section>
       <h1 className="font-medium text-2xl mb-8 tracking-tighter">my work</h1>
-      <div className="prose prose-neutral dark:prose-invert">
-        <p>
-          On a mission to build products developers{' '}
-          <Link href="/blog/developer-experience">love</Link>, and along the
-          way, teach the next generation of developers. Here's a summary of my
-          work so far.
-        </p>
-        <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
-        <h2 className="font-medium text-xl mb-1 tracking-tighter">Vercel</h2>
+      <p className="prose prose-neutral dark:prose-invert">
+        PhD in Computer Science, I worked as a doctoral researcher and research engineer at the Barcelona Supercomputing Center. I participated in different European projects, like the Human Brain Project and DEEP-EST. I had two internships, in a research lab and a big tech company. I published and presented my work to the main HPC conferences and journals.
+        My PhD Thesis proposes malleable job scheduling and energy-aware job scheduling policies for HPC.
+        In the recent years, I have been living as a freelancer by teaching computer science to the younger generations.
+      </p>
+
+      <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+        <h2 className="font-medium text-xl mb-1 tracking-tighter">Freelance teacher and tutor</h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-          VP of Product
+           Since Mar 2021: The importance of transfering wisdom through knowledge and experience.
         </p>
         <p>
-          I joined <a href="https://vercel.com/home">Vercel</a> early to grow{' '}
-          <a href="https://nextjs.org">Next.js</a> and our developer community.
-          I built our Developer Relations team to teach our community about our
-          products.
+          To be honest, after my PhD was done, I closed a big chapter of my life. At that point I started to see everything 
+          from a different perspective, and I started questioning the implications of technology in our society. 
+          Some sort of crysis developed, as a big fan of martial arts, the way of transforming war into a life path, 
+          I wondered if the same could happen with technology, how can I cultivate it to bring benefits to the human experience?
+          In the midst of these thoughts, I discovered how beautiful is to teach, tutor and mentor people. 
+          I started teaching computer science, engineering, programming: C, C++, Java, Python, OS, system programming, 
+          parallel and distributed systems, digital electronics, signal processing, and DBMS to individuals and groups. 
+          Every class also helps me strengthen my knowledge of the basics. 
+          At the same time, I had the opportunity to live around the globe, explore different cultures, cultivate my passions, 
+          and study: theory of systems and biological systems, quantum mechanics and quantum information, cloud technology, 
+          and machine learning, and practice Buddhism, Zen, and Aikido, Contact Improvisation, Wushu.
         </p>
-        <ul>
-          <li>
-            In 2021, I was promoted to Director of DevRel. We{' '}
-            <a href="https://twitter.com/kelseyhightower/status/1105985400110112768">
-              translated customer pain
-            </a>{' '}
-            back into the product roadmap. We spoke at{' '}
-            <Link href="/blog/nextjs-conf-2022-recap">conferences</Link>, wrote
-            blog posts, and created videos. We built open-source examples and
-            contributed back to the product.
-          </li>
-          <li>
-            In 2022, I was promoted to VP of Developer Experience, now also
-            leading our product documentation team. My team created a{' '}
-            <a href="https://nextjs.org/learn">new free course</a> to teach
-            Next.js, which had 17 million page views that year.{' '}
-            <a href="https://twitter.com/leeerob/status/1608900031859527682">
-              I shipped.
-            </a>{' '}
-            I partnered with our open-source community, collaborating with
-            frameworks like{' '}
-            <a href="https://vercel.com/docs/frameworks/nuxt">Nuxt</a> and{' '}
-            <a href="https://astro.build/blog/vercel-official-hosting-partner/">
-              Astro
-            </a>{' '}
-            and sponsoring individuals and projects.
-          </li>
-          <li>
-            In 2023, I was promoted to VP of Product, now also leading Product
-            Management.
-          </li>
-        </ul>
-        <p>
-          Since I joined Vercel in 2020, Next.js active developers have grown
-          1000%, now at ~900k. Next.js is now a top 10 software project on
-          GitHub with <Stars />. It's used by Walmart, ChatGPT, Starbucks, Okta,
-          Datastax, Notion, and <a href="https://nextjs.org/showcase">more</a>.
-        </p>
-        <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
-        <h2 className="font-medium text-xl mb-1 tracking-tighter">Hy-Vee</h2>
+
+      <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+        <h2 className="font-medium text-xl mb-1 tracking-tighter">Barcelona Supercomputer Center (BSC)</h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-          Senior Software Engineer, 2018 — 2020
+          Apr 2016 - Apr 2021: PHD Researcher / Research Software Engineer
         </p>
         <p>
-          Hy-Vee, an almost 100-year-old grocery chain in the United States,
-          wanted to build a new version of their digital storefront. I joined a
-          team of <Link href="/blog/product-engineers">product engineers</Link>{' '}
-          working across web and mobile to rebuild their legacy .NET application
-          (~500k MAU) with React and React Native.
+          Dynamic Resource Management for High Performance Computing. I did research in Job scheduling for malleable jobs. 
+          We implemented an interface for changing the number of CPUs an application is using inside a computational node. 
+          I used this library to enable efficient and transparent malleability for applications. I exploited malleability 
+          in job scheduling, developing new algorithms, fed by runtime information gathered from applications and systems, 
+          with the objective of improving system utilization and user experience on Supercomputers. I contributed to improving 
+          SLURM Simulator accuracy and performance. I also researched the integration of power, performance and energy models 
+          into the Job scheduling layer, to optimize the scheduling of jobs on clusters with multiple heterogeneous architectures.
         </p>
-        <p>
-          On the frontend, I led our move from a custom webpack and React
-          configuration to Next.js and the latest React patterns. In the
-          process, I shared my learnings online, helping educate members of the
-          React and Next.js community by creating courses.
-        </p>
-        <p>
-          Throughout my two years, I was able to work on some hard problems:
-          decoupling a decade old monolith into microservices, working with a
-          federated GraphQL API, learning and occasionally managing a Kubernetes
-          cluster, building and implementing a design system, incrementally
-          migrating individual components and routes to a new framework and
-          infrastructure, and more.
-        </p>
-        <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
-        <h2 className="font-medium text-xl mb-1 tracking-tighter">Workiva</h2>
+
+      <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+        <h2 className="font-medium text-xl mb-1 tracking-tighter">Intel Corporation</h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-          Software Engineer, 2015 — 2018
+           Jan 2019 - Jun 2019: Internship on Hardware design with Movidus R&D team
         </p>
         <p>
-          Workiva ($WK) is a cloud platform for data reporting and compliance.
-          During my time at Workiva, I gained my first production experience
-          using React. I worked on tooling to help predict and alert and
-          regressions in our SaaS platform, building a product similar to
-          open-source tools like Sentry.
+          R&D in sparse Neural Networks memory hardware for 
+          <a href="https://www.intel.com/content/www/us/en/products/details/processors/movidius-vpu.html">Intel Movidius</a> 
+          hardware architectures.
         </p>
-      </div>
+
+      <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+        <h2 className="font-medium text-xl mb-1 tracking-tighter">LRZ: Leibniz-Rechenzentrum</h2>
+        <p className="text-neutral-600 dark:text-neutral-400 text-sm">
+           Sep 2018 - Oct 2018: Intern Researcher on the energy awareness for HPC
+        </p>
+        <p>
+          I worked on the integration of energy, power, and runtime prediction model into the logic of the SLURM job scheduler. 
+          This work later was published in a paper and in my PhD thesis.
+        </p>
+        
+      <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+        <h2 className="font-medium text-xl mb-1 tracking-tighter">Barcelona Supercomputing Center (BSC)</h2>
+        <p className="text-neutral-600 dark:text-neutral-400 text-sm">
+           Apr 2015 - Oct 2015 Undergraduate Researcher on dynamic GPU scheduling
+        </p>
+        <p>
+          Master thesis on extension of DEEP-DEEPER Programming Model in an HPC environment.
+          The thesis aimed to integrate the DEEP Programming Model with a Resource Manager (SLURM), 
+          enabling the possibility to dynamically allocate new resources on demand by the Programming Model 
+          and spawn MPI processes on it, instead of statically allocating them at launch time.
+        </p>
+
+      <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+        <h2 className="font-medium text-xl mb-1 tracking-tighter">Politecnico di Torino</h2>
+        <p className="text-neutral-600 dark:text-neutral-400 text-sm">
+           Oct 2013 - Nov 2014: Teaching Assistant
+        </p>
+        <p>
+          While completing my master degreer, I worked part-time in teaching and assisting students in programming classes 
+          for basic and advanced courses of C and Java.
+        </p>
+      <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+        <h2 className="font-medium text-xl mb-1 tracking-tighter">synArea Consultants Srl</h2>
+        <p className="text-neutral-600 dark:text-neutral-400 text-sm">
+           Sep 2013 - Mar 2014: Software developer
+        </p>
+        <p>
+          Initially as an intern, later as a software developer, I worked on the parallelization on GPU of a scientific algorithm 
+          simulating a crowd in panic in an indoor enviroment. I developed OpenCL and CUDA kernels, and integrated, tested, and 
+          evaluated the code.
+          Finally, I worked on the integration of the algorithm in 3Doors Framework, developing a 3D graphical version of the 
+          simulation in C++.
+        </p>
     </section>
   );
 }

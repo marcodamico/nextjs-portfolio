@@ -10,19 +10,18 @@ summary: 'This is my first blog post.'
 
 Hello, World! Self affirmation of a non-existent self.`;
 
-const homePage = `export default function Page() {
+const homePage = `import Image from 'next/image';
+  
+  export default function Page() {
   return (
     <section>
       <h1 className="font-medium text-2xl mb-8 tracking-tighter">Ciao! This is Marco.</h1>
       <p className="prose prose-neutral dark:prose-invert">
         I am computer scientist, computer engineer. After traveling the world for two years I am now ready to start a new chapter.
 
-        
         At the time I am writing I am setting up a freelance career, wish me luck! Feel free to look around and have fun!
-
-        
       </p>
-            <div className="grid grid-cols-2 grid-rows-4 sm:grid-rows-3 sm:grid-cols-3 gap-4 my-8">
+      <div className="grid grid-cols-2 grid-rows-4 sm:grid-rows-3 sm:grid-cols-3 gap-4 my-8">
         <div className="relative h-40">
           <Image
             alt=""
