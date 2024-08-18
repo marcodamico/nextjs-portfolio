@@ -11,7 +11,16 @@ summary: 'This is my first blog post.'
 Hello, World! Self affirmation of a non-existent self.`;
 
 const homePage = `import Image from 'next/image';
-  
+  import aikidoibaraki from 'public/images/home/aikido-ibaraki.jpg'
+  import aikidokyoto from 'public/images/home/aikido-kyoto.jpg'
+  import aikidospain from 'public/images/home/aikido-spain.jpg'
+  import antaijirice from 'public/images/home/antaiji-rice.jpg'
+  import avatar from 'public/images/home/avatar.jpg'
+  import calligraphy from 'public/images/home/calligraphy.jpg'
+  import mountain from 'public/images/home/mountain.jpg'
+  import mountain2 from 'public/images/home/mountain2.jpg'
+  import ordination from 'public/images/home/ordination.jpg'
+  import risottodja from 'public/images/home/risotto-dja.jpg'
   export default function Page() {
   return (
     <section>
@@ -25,7 +34,7 @@ const homePage = `import Image from 'next/image';
         <div className="relative h-40">
           <Image
             alt=""
-            src="/public/images/home/avatar.jpg"
+            src={avatar}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -35,7 +44,7 @@ const homePage = `import Image from 'next/image';
         <div className="relative sm:row-span-2 row-span-1">
           <Image
             alt=""
-            src="/public/images/home/mountain.jpg"
+            src={mountain}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -45,7 +54,7 @@ const homePage = `import Image from 'next/image';
         <div className="relative">
           <Image
             alt=""
-            src="/public/images/home/aikido-kyoto.jpg"
+            src={ordination}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -55,7 +64,7 @@ const homePage = `import Image from 'next/image';
         <div className="relative row-span-2">
           <Image
             alt=""
-            src="/public/images/home/antaiji-rice.jpg"
+            src={antaijirice}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -65,7 +74,7 @@ const homePage = `import Image from 'next/image';
         <div className="relative row-span-2">
           <Image
             alt=""
-            src="/public/images/home/calligraphy.jpg"
+            src={calligraphy}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
@@ -75,7 +84,7 @@ const homePage = `import Image from 'next/image';
         <div className="relative h-40">
           <Image
             alt=""
-            src="/public/images/home/risotto-dja.jpg"
+            src={risottodja}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
