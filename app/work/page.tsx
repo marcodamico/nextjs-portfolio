@@ -11,20 +11,17 @@ export default function Page() {
       <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
         <h2 className="font-medium text-xl mb-1 tracking-tighter">Freelance teacher and tutor</h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-           Since Mar 2021: The importance of transfering wisdom through knowledge and experience.
+           Since Mar 2021: Transfering wisdom through knowledge and experience.
         </p>
         <p>
-          To be honest, after my PhD was done, I closed a big chapter of my life. At that point I started to see everything 
+          After my PhD, I closed a big chapter of my life. At that point, I started to see everything 
           from a different perspective, and I started questioning the implications of technology in our society. 
-          Some sort of crysis developed, as a big fan of martial arts, the way of transforming war into a life path, 
-          I wondered if the same could happen with technology, how can I cultivate it to bring benefits to the human experience?
+          Some sort of crisis developed. As a big fan of martial arts, the way of transforming war into a life path, 
+          I wondered if the same could happen with technology. How can I cultivate it to bring benefits to the human experience?
           In the midst of these thoughts, I discovered how beautiful is to teach, tutor and mentor people. 
           I started teaching computer science, engineering, programming: C, C++, Java, Python, OS, system programming, 
           parallel and distributed systems, digital electronics, signal processing, and DBMS to individuals and groups. 
-          Every class also helps me strengthen my knowledge of the basics. 
-          At the same time, I had the opportunity to live around the globe, explore different cultures, cultivate my passions, 
-          and study: theory of systems and biological systems, quantum mechanics and quantum information, cloud technology, 
-          and machine learning, and practice Buddhism, Zen, and Aikido, Contact Improvisation, Wushu.
+          Every class also helps me strengthen my knowledge of the basics. Teaching and learning are strictly related.
         </p>
 
       <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
@@ -33,13 +30,14 @@ export default function Page() {
           Apr 2016 - Apr 2021: PHD Researcher / Research Software Engineer
         </p>
         <p>
-          Dynamic Resource Management for High Performance Computing. I did research in Job scheduling for malleable jobs. 
-          We implemented an interface for changing the number of CPUs an application is using inside a computational node. 
-          I used this library to enable efficient and transparent malleability for applications. I exploited malleability 
-          in job scheduling, developing new algorithms, fed by runtime information gathered from applications and systems, 
-          with the objective of improving system utilization and user experience on Supercomputers. I contributed to improving 
-          SLURM Simulator accuracy and performance. I also researched the integration of power, performance and energy models 
-          into the Job scheduling layer, to optimize the scheduling of jobs on clusters with multiple heterogeneous architectures.
+          The topic of my research was Dynamic Resource Management for High Performance Computing. I did research in Job 
+          scheduling for malleable jobs. With a team we implemented an interface for changing the number of CPUs an application 
+          is using inside a computational node. I used this library to enable efficient and transparent malleability for applications. 
+          I exploited malleability in job scheduling, developing new algorithms, fed by runtime information gathered from applications 
+          and systems, with the objective of improving system utilization and user experience on Supercomputers. 
+          I contributed to improving SLURM Simulator accuracy and performance. I also researched the integration of power, 
+          performance and energy models into the Job scheduling layer, to optimize the scheduling of jobs on clusters with 
+          multiple heterogeneous architectures.
         </p>
 
       <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
