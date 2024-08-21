@@ -11,6 +11,7 @@ export const {
       clientSecret: process.env.OAUTH_CLIENT_SECRET as string,
     }),
   ],
+  secret: process.env.AUTH_SECRET, 
   pages: {
     signIn: '/sign-in',
   },
