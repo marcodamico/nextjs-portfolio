@@ -2,6 +2,7 @@ import { getViewsCount } from 'app/db/queries';
 
 export default async function handler(req, res) {
     try {
+        console.log("Cron job started"); // Log start
         let views = await getViewsCount();
     
         // Return the fetched data
