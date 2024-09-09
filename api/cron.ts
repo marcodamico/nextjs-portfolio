@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 
-import { getViewsCount } from 'app/db/queries';
+import { getViewsCount } from '../app/db/queries';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     try {
