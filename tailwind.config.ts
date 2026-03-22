@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: [inter.style.fontFamily, 'sans-serif'],
+        sans: ['Inter', 'sans-serif'],
         mono: ['ui-monospace', 'monospace'],
       },
       typography: {
