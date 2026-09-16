@@ -19,16 +19,21 @@ const nextConfig = {
       return [];
     }
 
-    let redirects = await sql`
-      SELECT source, destination, permanent
-      FROM redirects;
-    `;
+    try {
+      let redirects = await sql`
+        SELECT source, destination, permanent
+        FROM redirects;
+      `;
 
-    return redirects.map(({ source, destination, permanent }) => ({
-      source,
-      destination,
-      permanent: !!permanent,
-    }));
+      return redirects.map(({ source, destination, permanent }) => ({
+        source,
+        destination,
+        permanent: !!permanent,
+      }));
+    } catch (error) {
+      console.warn('Skipping DB redirects:', error.message);
+      return [];
+    }
   },
   headers() {
     return [
